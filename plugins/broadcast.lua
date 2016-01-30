@@ -4,7 +4,7 @@ local function run(msg, matches)
 		send_large_msg("chat#id"..matches[2], response)
 	end
 	if matches[1] == 'broadcast' then
-		if is_sudo(msg) then -- Only sudo !
+		if is_sudo(msg) then -- Only it_s_me_lol !
 			local data = load_data(_config.moderation.data)
 			local groups = 'groups'
 			local response = matches[2]
